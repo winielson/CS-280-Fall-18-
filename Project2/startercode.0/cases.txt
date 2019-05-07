@@ -1,0 +1,77 @@
+badarg1:
+	prog2 -kale
+
+badarg2:
+	prog2 -sum -kale
+
+badfile:
+	prog2 nosuchfile
+
+toomanyfile:
+	prog2 emptyfile nosuchfile
+
+emptyfile:
+	prog2 emptyfile 
+
+spacesfile:
+	prog2 spacesfile 
+
+emptyfile2:
+	prog2 < emptyfile 
+
+stringok:
+	prog2 -v stringok 
+
+stringbad1:
+	prog2 -v stringbad1 
+
+stringbad2:
+	prog2 -v stringbad2 
+
+comments:
+	prog2 -v comments 
+
+sharpinstring:
+	prog2 -v sharpinstring 
+
+items1:
+	prog2 -v items1 
+
+items2:
+	prog2 < items2 
+
+items3:
+	prog2 -v items3 
+
+items4:
+	prog2 items4 
+
+mix1:
+	prog2 -v mix1
+
+mix2:
+	prog2 -sum mix2
+
+mix3:
+	prog2 -allids mix3
+
+mix4:
+	prog2 -allids -sum mix4
+
+mix5:
+	prog2 -sum -allids mix5
+
+err1:
+	prog2 -v err1
+
+err2:
+	prog2 -v err2
+
+err3:
+	prog2 -v err3
+
+err4:
+	prog2 -v err4
+
+err5:
+	prog2 -v err5
